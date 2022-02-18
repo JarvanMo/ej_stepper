@@ -269,7 +269,9 @@ class _EJStepperState extends State<EJStepper> {
           margin: widget.stepsMargin,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(16),
-            color: Colors.white,
+            color: Theme.of(context).brightness == Brightness.dark
+                ? Colors.black12
+                : Colors.white,
             boxShadow: [
               BoxShadow(
                 color: Colors.grey.withOpacity(0.3),
