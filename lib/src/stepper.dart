@@ -300,7 +300,9 @@ class _EJStepperState extends State<EJStepper> {
                           height: 15,
                           width: 15,
                           decoration: BoxDecoration(
-                            color: Colors.white,
+                            color: Theme.of(context).brightness == Brightness.dark
+                                ? Colors.black12
+                                : Colors.white,
                             borderRadius: BorderRadiusDirectional.only(
                               bottomEnd: Radius.circular(100),
                               topEnd: Radius.circular(100),
